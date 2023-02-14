@@ -32,6 +32,11 @@ npm start
 
 Create a Dockerfile in the root of the project. This file will contain the instructions to build the image.
 
+Use the following instructions :
+* Use the official node image as a base image : `node:16.13.1`
+* Do a production install of the dependencies : `npm install --only=production`
+* Expose the port 3000
+
 ## Step 2 : Build the image
 
 Build the docker image.
