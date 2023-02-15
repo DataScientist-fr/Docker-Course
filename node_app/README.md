@@ -44,3 +44,5 @@ Build the docker image.
 ## Step 3 : Run the container
 
 Run the container and check that the application is working properly.
+Connect the container to a Volume in order to have persistent logs when you delete and recreate the container :
+* Node application logs are stored in the container directory : `/var/log/`
