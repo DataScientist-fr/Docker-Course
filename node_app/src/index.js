@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 
 const fs = require('fs');
-var stream = fs.createWriteStream(`/var/log/node_app.log`);
+var stream = fs.createWriteStream(`/var/log/node_app.log`, { flags: 'a' });
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
